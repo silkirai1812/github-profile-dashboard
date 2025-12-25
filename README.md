@@ -72,3 +72,17 @@ I wanted to build something that:
 If the username does not exist, an error message is shown.
 
 ---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+✨ **Hey there!**
+
+Thanks for visiting this repository.  
+This project was made with lots of curiosity.
+
+Take a moment to try it out.  
+Happy coding! 
