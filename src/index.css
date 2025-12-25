@@ -1,0 +1,100 @@
+:root {
+  /* Backgrounds */
+  --bg: #0b1020;
+  --bg-soft: #111827;
+  --card: rgba(20, 25, 45, 0.7);
+
+  /* Text */
+   --text-main: #f8fafc;     
+  --text-soft: #e2e8f0;     
+  --text-muted: #a5b4cf; 
+
+  /* Accents */
+  --accent-blue: #8ab4ff;
+  --accent-purple: #c7a9ff;
+  --accent-pink: #f0a3c4;
+}
+
+/* Light theme (future-ready, not breaking anything) */
+/* [data-theme="light"] {
+  --bg: #f4f6f8;
+  --bg-soft: #ffffff;
+  --card: #ffffff;
+
+  --text-main: #0f172a;
+  --text-soft: #334155;
+  --text-muted: #475569;
+} */
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* =======================
+   BASE LAYOUT
+======================= */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+/* =======================
+   BODY STYLES (MERGED)
+======================= */
+
+body {
+  color: var(--text-main);
+  background:
+    radial-gradient(circle at 15% 20%, #a5b4fc55, transparent 40%),
+    radial-gradient(circle at 85% 30%, #fca5a555, transparent 45%),
+    radial-gradient(circle at 50% 80%, #fde68a55, transparent 40%),
+    radial-gradient(circle at 80% 80%, #c4b5fd55, transparent 45%),
+    var(--bg);
+  background-attachment: fixed;
+}
+
+/* =======================
+   TEXT HELPERS
+======================= */
+
+.muted {
+  color: var(--text-muted);
+}
+
+.heading{
+  color: #c7a9ff;
+  font-weight: 800;
+  font-size: larger;
+  text-decoration: none;
+}
