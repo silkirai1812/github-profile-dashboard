@@ -73,12 +73,6 @@ If the username does not exist, an error message is shown.
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
-
 ✨ **Hey there!**
 
 Thanks for visiting this repository.  
