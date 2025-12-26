@@ -15,6 +15,7 @@ function ProfileCard({ user }) {
         <img
           src={user.avatarUrl}
           alt={`${user.login} GitHub avatar`} 
+          loading="lazy"
         />
       </a>
 
