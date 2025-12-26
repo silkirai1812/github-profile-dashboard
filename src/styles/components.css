@@ -269,6 +269,150 @@
   color: transparent;
 }
 
+/* FOOTER WRAPPER */
+.footer {
+  margin-top: auto;              
+  border-top: 1px solid rgba(255, 255, 255, 0.08); 
+  background: transparent;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* CENTERED INNER LAYOUT */
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+
+/* MAX WIDTH + SIDE SPACING */
+.footer > .footer-left,
+.footer > .footer-right {
+  flex: 1;
+}
+
+.footer {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.footer::before {
+  content: "";
+}
+
+/* INNER CONTAINER FEEL */
+.footer {
+  --footer-max-width: 1100px;
+}
+
+.footer-left,
+.footer-right {
+  max-width: var(--footer-max-width);
+}
+
+/* ACTUAL CONTENT ALIGNMENT */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 30px;
+}
+
+
+/* LEFT BRANDING */
+.footer-branding {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer-brand {
+  font-weight: 900;
+  font-size: larger;
+  color: var(--text);
+  letter-spacing: 0.2px;
+  cursor: pointer;
+}
+
+.footer-eyebrow {
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+/* RIGHT SIDE */
+.footer-right {
+  justify-content: flex-end;
+  gap: 14px;
+  text-align: right;
+}
+
+.footer-madeby {
+  font-size: 0.8rem;
+  opacity: 0.85;
+}
+
+/* ICONS */
+.footer-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-icons a {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-muted);
+  transition: all 0.2s ease;
+}
+
+.footer-icons a:hover {
+  background: rgba(124, 92, 255, 0.25);
+  color: var(--text);
+  transform: translateY(-2px);
+}
+
+.footer * {
+  transition: all 0.2s ease;
+}
+
+@media (max-width: 700px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+    padding: 16px 16px;
+  }
+
+  .footer-left,
+  .footer-right {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .footer-right {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-icons {
+    justify-content: center;
+  }
+}
+
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 
 
 /* responsiveness */
